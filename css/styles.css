@@ -58,6 +58,7 @@ img {
 .header-section {
    padding: 24px 0 25px;
    display: flex;
+    border: 1px solid #ECECEC;
 }
 .logo {
     display: block;

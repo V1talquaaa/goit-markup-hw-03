@@ -60,9 +60,9 @@ img {
    display: flex;
     border: 1px solid #ECECEC;
 }
+
 .logo {
     display: block;
-    padding: 24px 0 25px;
     font-family: raleway, sans-serif;
     color: #000000;
     font-weight: 700;
@@ -74,19 +74,20 @@ img {
 .logo-blue {
     color: var(--secondary-color)
 }
-
+.header-section .container {
+    display: flex;
+    align-items: center;
+}
 .nav-menu {
     display: flex;
-    margin: 32px 0;
-    padding-left: 93px;
-    padding-right: 344px;
-    
+    margin-left: 93px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
 }
+
 
 .nav-menu li:not(:last-child) {
     margin-right: 50px;
@@ -110,7 +111,8 @@ img {
 }
 .nav-all {
 display: flex;
-justify-content: ;
+
+align-items: center;
 }
 
 .nav-link,
@@ -121,10 +123,13 @@ justify-content: ;
 
 
 .header-contacts {
-    display: flex;
-    margin: 32px 0;
-}
 
+    display: flex;
+   
+}
+.contacts-margin {
+    margin-left: auto;
+}
 .header-contacts > li:not(:last-child) {
     margin-right: 50px;
 }
@@ -179,13 +184,13 @@ justify-content: ;
 }
 /* -----------------advantages--------------------- */
 .advantages {
-margin: 94px 0;
+padding-top: 94px;
 
 }
 
 .advantages-list {
     display: flex;
-    margin: 94px 0;
+    
 }
 
 .advantages-list li:not(:last-child) {
@@ -206,25 +211,31 @@ margin: 94px 0;
     max-width: 270px;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--additional-color);
 }
 /* ----------------services------------------------ */
 .services {
-   
+   padding: 94px 0;
 }
 .services-list {
     display: flex;
 }
 
 .services-list li:not(:last-child) {
-    padding-right: 30px;
+    margin-right: 30px;
 }
-.services-title,
+.services-title {
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
 .team-title {
-    
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-align: center;
 
     font-size: 36px;
@@ -236,16 +247,15 @@ margin: 94px 0;
 /* ----------------team----------------------------- */
 
 .team {
-    margin-top:  94px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 94px 0;
     
-    background-color: #F5F4FA;
+background-color: #F5F4FA;
 }
 
+.team-card {
+    padding: 30px 0;
+}
 .team-member {
-    padding-top: 30px;
-    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -257,9 +267,7 @@ margin: 94px 0;
     display: flex;
     text-align: center;
 }
-.team-list li:not(:last-child) {
-    padding-right: 30px;
-}
+
 
 .team-item {
     background: #FFFFFF;
@@ -271,7 +279,6 @@ margin: 94px 0;
     margin-right: 30px;
 }
 .team-member-position {
-    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
@@ -303,8 +310,8 @@ margin: 94px 0;
 }
 .footer-physical-address {
 
-    padding-top: 20px;
-    padding-bottom: 9px;
+    margin-top: 20px;
+    margin-bottom: 9px;
 
     font-style: normal;
     font-weight: 400;
@@ -324,12 +331,10 @@ margin: 94px 0;
 }
 
 .footer-email {
-    padding-bottom: 9px;
+    margin-bottom: 9px;
 }
 
-.footer-phone {
-    padding-bottom: 60px;
-}
+
 
 
 /* -------------------------portfolio html-------------------- */
@@ -339,6 +344,7 @@ margin: 94px 0;
 }
 
 .filter-btn {
+    padding: 6px 22px;
 
     font-family: 'Roboto';
     font-weight: 500;
@@ -386,12 +392,9 @@ margin: 94px 0;
     
     display: flex;
     justify-content: center;
-}
-
-.filter-item {
-    padding: 6px 22px;
     margin-bottom: 50px;
 }
+
 .filter-item:not(:last-child) {
     margin-right: 8px;
     
@@ -411,13 +414,8 @@ margin: 94px 0;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
 }
-.portfolio-example {
-    margin-top: 30px;
-    margin-bottom: 4px;
-    padding-left: 24px;
-}
-
-.portfolio-group {
-    padding-bottom: 20px;
-    padding-left: 24px;
+.portfolio-exmpl {
+    padding: 20px 0;
+    margin-left: 24px;
+    
 }
